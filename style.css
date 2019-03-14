@@ -1,0 +1,83 @@
+body{
+    background-image:url("depositphotos_41084113-stock-photo-background.jpg");
+}
+.border {
+    margin-left: 40%;
+margin-top: 15%;
+    background-color: darkslategray;
+    background-image: url("black-background_00313351.jpg");
+    width: 180px;
+    height: 280px;
+    padding-left: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+.digit {
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 5px;
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    font-family: "Segoe UI";
+    outline: 0 !important;
+    cursor: grab;
+    border: 0;
+}
+
+.sign {
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 5px;
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    font-family: "Segoe UI";
+    background-color: orangered;
+    outline: 0 !important;
+    cursor: grab;
+    border: 0;
+
+}
+
+.input {
+    height: 50px;
+    width: 170px;
+    text-align: end;
+    font-size: 20px;
+    border: none;
+    color: white;
+    font-family: "Segoe UI";
+    background-image: url("black-background_00313351.jpg");;
+}
+
+#equal {
+    width: 128px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: darkgray;
+    cursor: grab;
+
+}
+
+#zero {
+    width: 128px;
+    border-radius: 10px;
+}
+
+#reload {
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    color: white;
+    outline: 0 !important;
+    background-color: darkgray;
+    cursor: grab;
+    border: 0;
+}
+
+
+

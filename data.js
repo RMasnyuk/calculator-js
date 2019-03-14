@@ -1,12 +1,12 @@
 var buttons = document.getElementsByClassName('digit');
 var input = document.getElementById('input');
-var inputValue = "";
-
+var inputValue = '';
+input.value = "0";
 for (var i = 0; i < buttons.length; i++) {
     buttons[i].onclick = function (event) {
         event.preventDefault();
         var buttonValue = event.target.dataset.value;
-
+        input.value = "";
         inputValue += buttonValue;
         input.value += buttonValue;
 
@@ -18,16 +18,18 @@ for (var i = 0; i < buttons.length; i++) {
 
 var signs = document.getElementsByClassName('sign');
 var savedValue = inputValue;
+
 var pressedSign;
-var result = "";
+var result;
 
 
 for (i = 0; i < signs.length; i++) {
     signs[i].onclick = function (event) {
         event.preventDefault();
         var signValue = event.target.dataset.value;
-
-        if (result != "") {
+        console.log(savedValue);
+        if (result != undefined) {
+            console.log("result = " + result);
             savedValue = result;
         } else {
             savedValue = +inputValue + +savedValue;
@@ -71,6 +73,21 @@ equal.onclick = function (event) {
     return;
 
 }
+var deleteInput = document.getElementById('reload');
+deleteInput.onclick = function (event) {
+    event.preventDefault();
+    input.value = '0';
+    inputValue = '';
+
+    result = undefined;
+    savedValue = 0;
+    console.log("sv= " + savedValue);
+    console.log("iv= " + inputValue);
+}
+
+
+
+
 
 
 

@@ -1,41 +1,50 @@
 <html>
 <head>
     <title>Test</title>
-    <link href="style.css"  rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
 <div>
     <form>
-        <div>
-            <input type="text" value="" id="input">
-        </div>
-        <br>
-        <div id="digits">
-            <button id="one" class="digit" data-value="1">1</button>
-            <button id="two" class="digit" data-value="2">2</button>
-            <button id="three" class="digit" data-value="3">3</button>
-            <button id="four" class="digit" data-value="4">4</button>
-            <button id="five" class="digit" data-value="5">5</button>
-            <button id="six" class="digit" data-value="6">6</button>
-            <button id="seven" class="digit" data-value="7">7</button>
-            <button id="eight" class="digit" data-value="8">8</button>
-            <button id="nine" class="digit" data-value="9">9</button>
-            <button id="ten" class="digit" data-value="0">0</button>
-        </div>
-        <br>
-        <div id="signs">
-            <button id="plus" class="sign" data-value="+">+</button>
-            <button id="minus" class="sign" data-value="-">-</button>
-            <button id="delete" class="sign" data-value="/">/</button>
-            <button id="multiple" class="sign" data-value="*">*</button>
-            <button id="equal" class="equal">=</button>
-        </div>
-        <br>
-        <div>
-            <button id="reload" onClick="document.location.reload(true)"> C</button>
+        <div class="border">
+            <div class="in">
+                <input type="text" value="" id="input" class="input">
+            </div>
+
+
+            <div class="firstLine">
+                <button id="seven" class="digit" data-value="7">7</button>
+                <button id="eight" class="digit" data-value="8">8</button>
+                <button id="nine" class="digit" data-value="9">9</button>
+                <button id="multiple" class="sign" data-value="*">*</button>
+            </div>
+            <div class="secondLine">
+                <button id="four" class="digit" data-value="4">4</button>
+                <button id="five" class="digit" data-value="5">5</button>
+                <button id="six" class="digit" data-value="6">6</button>
+                <button id="minus" class="sign" data-value="-">-</button>
+            </div>
+            <div class="thirdLine">
+                <button id="one" class="digit" data-value="1">1</button>
+                <button id="two" class="digit" data-value="2">2</button>
+                <button id="three" class="digit" data-value="3">3</button>
+                <button id="plus" class="sign" data-value="+">+</button>
+            </div>
+            <div class="fourthLine">
+                <button id="zero" class="digit" data-value="0">0</button>
+
+                <button id="delete" class="sign" data-value="/">/</button>
+
+            </div>
+            <div class="fifthLine">
+                <button id="equal" class="sign">=</button>
+                <button id="reload" > C</button>
+
+            </div>
+
+
         </div>
     </form>
-</div>
-<script src="data.js"></script>
+    <script src="data.js"></script>
 </body>
 </html>
